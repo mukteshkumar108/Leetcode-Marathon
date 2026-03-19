@@ -1,3 +1,8 @@
+
+#include <iostream>
+#include <string>
+using namespace std;
+
 class Solution {
 public:
     bool isSubsequence(string s, string t) {
@@ -13,3 +18,18 @@ public:
         return i == s.size();
     }
 };
+
+int main() {
+    Solution sol;
+
+    string s = "abc";
+    string t = "ahbgdc";
+
+    if (sol.isSubsequence(s, t)) {
+        cout << "True" << endl;
+    } else {
+        cout << "False" << endl;
+    }
+
+    return 0;
+}
